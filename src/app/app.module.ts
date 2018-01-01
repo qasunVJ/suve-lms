@@ -15,6 +15,7 @@ import {HttpModule} from "@angular/http";
 import { MycoursesComponent } from './mycourses/mycourses.component';
 import {MycoursesService} from "./mycourses/mycourses.service";
 import {GroupByPipe} from "./topnav/groupby.pipe";
+import { IndividualCourseComponent } from './mycourses/individualcourse/individualcourse.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {GroupByPipe} from "./topnav/groupby.pipe";
         HomeComponent,
         NocontentComponent,
         MycoursesComponent,
-        GroupByPipe
+        GroupByPipe,
+        IndividualCourseComponent
     ],
     imports: [
         BrowserModule,
@@ -41,6 +43,9 @@ import {GroupByPipe} from "./topnav/groupby.pipe";
             },{
                 path: 'mycourses',
                 component: MycoursesComponent
+            },{
+                path: 'courses/:course',
+                component: IndividualCourseComponent
             },{
                 path: '**',
                 component: NocontentComponent

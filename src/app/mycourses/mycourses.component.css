@@ -25,9 +25,9 @@
 }
 .imaged-block:hover{
     cursor: pointer;
-    -webkit-box-shadow: 0 1px 5px #bbb;
-    -moz-box-shadow: 0 1px 5px #bbb;
-    box-shadow: 0 1px 5px #bbb;
+    -webkit-box-shadow: 0 2px 5px #aaa;
+    -moz-box-shadow: 0 2px 5px #aaa;
+    box-shadow: 0 2px 5px #aaa;
 }
 .block-disc{
     font-size: 14px;
